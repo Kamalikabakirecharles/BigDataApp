@@ -1,10 +1,178 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>My Index Page</title>
-</head>
-<body>
-    <h1>Welcome to My Index Page</h1>
-    <p>This is the home page for my Django project.</p>
-</body>
+    <!-- Link Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Ionic Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- Link Ionic Icons JavaScript -->
+    <script
+      src="https://code.ionicframework.com/ionicons/2.0.1/js/ionicons.min.js"
+      defer
+    ></script>
+    <style>
+      /* Style the first navbar */
+      #top-navbar {
+        background-color: #ffc107; /* Yellow background color */
+        color: #000000; /* Black text color */
+        padding: 10px 0; /* Add some padding for better spacing */
+      }
+
+      /* Style the second navbar */
+      #bottom-navbar {
+        background-color: #007ada; /* Blue background color */
+        color: #ffffff; /* White text color */
+      }
+
+      /* Style the text in the second navbar */
+      #bottom-navbar .navbar-nav .nav-link {
+        color: #ffffff; /* White text color */
+      }
+
+      /* Set background color for body */
+      body {
+        color: #ffffff; /* White text color */
+      }
+
+      /* Set background color for first section */
+      .first-section {
+        background-color: #0089e1; /* Blue background color */
+      }
+
+      /* Set background color for second section */
+      .second-section {
+        background-color: #ffffff; /* White background color */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- First Navbar -->
+    <nav id="top-navbar" class="navbar">
+      <div class="container">
+        <!-- Content for the top navbar -->
+        <span class="mx-auto"
+          ><ion-icon
+            name="notifications-outline"
+            style="margin-right: 5px; color: #0099e8"
+          ></ion-icon>
+          New! The fiscal year 2024/2025 has started. Pay for your family’s
+          mutuelle coverage <a id="banner_link" href="#"><b>here</b></a></span
+        >
+      </div>
+    </nav>
+
+    <!-- Second Navbar -->
+    <nav id="bottom-navbar" class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Navbar brand/logo -->
+        <a class="navbar-brand" href="#" style="color: #ffffff">IremboGov</a>
+        <!-- Toggle button for small screens -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><ion-icon
+                  name="help-circle-outline"
+                  style="margin-right: 5px"
+                ></ion-icon
+                >Support Center</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><ion-icon
+                  name="person-add-outline"
+                  style="margin-right: 5px"
+                ></ion-icon
+                >Sign Up</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><ion-icon
+                  name="log-in-outline"
+                  style="margin-right: 5px"
+                ></ion-icon
+                >Log In</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#"
+                style="background-color: #0099e8; color: #ffffff"
+                ><ion-icon
+                  name="search-outline"
+                  style="margin-right: 5px"
+                ></ion-icon
+                >Find Applications</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div
+      class="first-section d-flex flex-column justify-content-center align-items-center"
+      style="height: 40vh"
+    >
+      <div class="text-center">
+        <h1
+          class="home-section-title-rest ng-tns-c222-0"
+          style="color: #ffffff"
+        >
+          Welcome
+        </h1>
+      </div>
+      <div class="input-group flex-nowrap" style="max-width: 600px">
+        <!-- Adjust max-width as needed -->
+        <span class="input-group-text" id="addon-wrapping">
+          <ion-icon name="search-outline"></ion-icon>
+        </span>
+        <input
+          type="text"
+          class="form-control home-input ng-tns-c222-0 ng-valid ng-dirty ng-touched"
+          placeholder="search for services"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+        />
+      </div>
+    </div>
+
+    <div class="second-section" style="min-height: 200px">
+      <!-- Content for the second section -->
+    </div>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
