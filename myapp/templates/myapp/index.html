@@ -27,13 +27,15 @@
 
       /* Style the second navbar */
       #bottom-navbar {
-        background-color: #007ada; /* Blue background color */
+        background-color: #0075d7; /* Blue background color */
         color: #ffffff; /* White text color */
+        padding-right: 40px; /* Add padding to the right to create space between links */
       }
 
       /* Style the text in the second navbar */
       #bottom-navbar .navbar-nav .nav-link {
         color: #ffffff; /* White text color */
+        margin-right: 30px; /* Add margin to create space between each link */
       }
 
       /* Set background color for body */
@@ -43,12 +45,22 @@
 
       /* Set background color for first section */
       .first-section {
-        background-color: #0089e1; /* Blue background color */
+        background-color: #0075d7; /* Blue background color */
       }
 
       /* Set background color for second section */
       .second-section {
         background-color: #ffffff; /* White background color */
+      }
+
+      /* Increase width of alert */
+      .alert {
+        width: 1000px; /* Adjust width as needed */
+        margin-right: 160px;
+      }
+      #img-bg {
+        margin-right: 80px;
+        margin-top: 50px;
       }
     </style>
   </head>
@@ -63,7 +75,7 @@
             style="margin-right: 5px; color: #0099e8"
           ></ion-icon>
           New! The fiscal year 2024/2025 has started. Pay for your family’s
-          mutuelle coverage <a id="banner_link" href="#"><b>here</b></a></span
+          mutuelle coverage <a id="banner_link" href="form"><b>here</b></a></span
         >
       </div>
     </nav>
@@ -72,7 +84,14 @@
     <nav id="bottom-navbar" class="navbar navbar-expand-lg">
       <div class="container">
         <!-- Navbar brand/logo -->
-        <a class="navbar-brand" href="#" style="color: #ffffff">IremboGov</a>
+        <a class="navbar-brand" href="#">
+          <img
+            src="static/images/irembo-gov.png"
+            alt="IremboGov Logo"
+            style="height: 30px"
+          />
+        </a>
+
         <!-- Toggle button for small screens -->
         <button
           class="navbar-toggler"
@@ -135,7 +154,7 @@
     <!-- Main content -->
     <div
       class="first-section d-flex flex-column justify-content-center align-items-center"
-      style="height: 40vh"
+      style="height: 30vh"
     >
       <div class="text-center">
         <h1
@@ -158,10 +177,28 @@
           aria-describedby="addon-wrapping"
         />
       </div>
+      <!-- Container to contain the image -->
+      <div class="container" id="img-bg" style="position: absolute; z-index: -0; right: 0;">
+        <img
+          src="static/images/group.png"
+          alt="Group Image"
+        />
+      </div>
     </div>
 
-    <div class="second-section" style="min-height: 200px">
+    <div
+      class="second-section d-flex justify-content-center align-items-center"
+      style="min-height: 200px"
+    >
       <!-- Content for the second section -->
+      <div class="alert alert-primary" role="alert">
+        <ion-icon
+          name="information-circle-outline"
+          style="margin-right: 5px"
+        ></ion-icon>
+        <a href="#" style="text-decoration: underline">Click here</a> for all
+        Tourism Services
+      </div>
     </div>
 
     <!-- Link Bootstrap JS -->
